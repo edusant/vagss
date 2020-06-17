@@ -42,38 +42,42 @@
            
       
       
-      <form class="mt-5 container">
+         
         <p class="h5 text-center">Inscrição</p>
         <div class="form-group">
           <label for="formGroupExampleInput">Email (da empresa)</label>
-          <input type="text" class="form-control" id="formGroupExampleInput">
+            <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server"></asp:TextBox>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">Senha</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" >
+          <asp:TextBox ID="TextBox2" Type="password" CssClass="form-control" runat="server"></asp:TextBox>
+
         </div>
         <div class="form-group">
             <label>CNPJ</label>
-            <input type="text" class="form-control"  >
+               <asp:TextBox ID="TextBox3" CssClass="form-control" runat="server"></asp:TextBox>
           </div>
 
           <div class="form-group">
             <label>Nome razão</label>
-            <input type="text" class="form-control" >
+              <asp:TextBox ID="TextBox4" CssClass="form-control" runat="server"></asp:TextBox>
           </div>
           <div class="form-group">
-            <label >Nome</label>
-            <input type="text" class="form-control" >
+           <label >Nome Fantasia</label>
+               <asp:TextBox ID="TextBox5" CssClass="form-control" runat="server"></asp:TextBox>
           </div>
+          <asp:Button ID="Button1" CssClass="btn btn-primary" runat="server" Text="Button" OnClick="Button1_Click" />
 
-
-          <div class="form-group">
-            <label>Descrição</label>
-             <textarea name="" id="" class="form-control" cols="30" rows="3"></textarea>
-          </div>
-        <button type="submit" class="btn btn-primary">Inscrever</button>
-      </form>
+         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
     </form>
+         <br />
+         <p>
+             <br />
+          <label for="formGroupExampleInput">
+             
+             </label>
+            </p>
+    </div>
 </body>
 </html>
