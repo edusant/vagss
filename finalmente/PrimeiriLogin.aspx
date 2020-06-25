@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="PrimeiriLogin.aspx.cs" Inherits="PrimeiriLogin" %>
 
 <!DOCTYPE html>
 
@@ -10,11 +10,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Login - vagas</title>
+    <title>Minha vagas - vagas</title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+       <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a class="navbar-brand" href="#">Seu emprego</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -22,13 +22,13 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="inscrevase.html">Inscrever</a>
+              <a class="nav-link" href="#">Inscrever</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="index.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vagas</a>
+              <a class="nav-link" href="vaga.html">Vagas</a>
             </li>    
 
 
@@ -36,23 +36,25 @@
           </ul>
         </div>  
       </nav>
-        <div class="container">
-            <form class="mt-5 container">
-        <p class="h5 text-center">Login</p>
+      
+      
+      <p class="text-center h5 mt-3">Vagas da minha empresa</p>
 
-                
-    <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
-        <div class="form-group">
-          <label for="formGroupExampleInput">Email (da empresa)</label>
-             <asp:TextBox ID="TextBox2" type="email" CssClass="form-control" runat="server"></asp:TextBox>
+        <div class="container">
+        <a href="inscricaoVagas.aspx" class="btn btn-link">Adicionar Vagas</a>
+
+      <div class="card mt-3">
+
+        <div class="card-body">
+          <h4 class="card-title">Vaga para Programador PHP</h4>
+          <p class="card-text">Especialista.</p>
+          <a href="detalhedasvagas.html" class="card-link btn btn-info">Ver vaga</a>
+          <a href="arquivar.html" class="card-link btn btn-success">Editar</a>
+          <a href="Excluir.html" class="card-link btn btn-danger">Excluir</a>
+
         </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput2">Senha</label>
-            <asp:TextBox ID="TextBox1" type="password" CssClass="form-control" runat="server"></asp:TextBox>
-        </div>
-                <asp:Button ID="Button1" CssClass="btn btn-primary" runat="server" Text="Button" OnClick="Button1_Click" />
-      </form>
-        </div>
+      </div>
+            </div>
     </form>
 </body>
 </html>
